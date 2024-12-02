@@ -5,10 +5,10 @@ FROM openjdk:11-jdk-slim
 WORKDIR /app
 
 # Copia el archivo JAR del proyecto al contenedor
-COPY target/semestralygg-1.0-SNAPSHOT.jar /app/semestralygg.jar
+COPY target/SemestralYGG-1.0-SNAPSHOT.jar /app/SemestralYGG.jar
 
 # Expone el puerto 8080
 EXPOSE 8080
 
 # Ejecuta la aplicación Java
-CMD ["java", "-jar", "semestralygg.jar"]
+CMD ["java", "-jar", "SemestralYGG.jar"]
