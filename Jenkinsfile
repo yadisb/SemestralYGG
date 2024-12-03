@@ -21,7 +21,7 @@ pipeline {
                 echo 'Desplegando aplicación...'
                 sh """
                 docker build -t semestralygg .
-                docker run -d -p 8080:8080 semestralygg
+                docker run -d -p 8081:8080 semestralygg
                 """
             }
         }
